@@ -12,12 +12,14 @@ features:
 ---
 
 <script setup>
-import '@gouvfr/dsfr/dist/dsfr/dsfr.module.js'
+import {onMounted} from 'vue'
 import '@gouvfr/dsfr/dist/dsfr/dsfr.min.css'
 
 import DsfrButton from './composants/DsfrButton.vue'
 import DsfrAccordion from './composants/DsfrAccordion.vue'
 import DsfrBreadcrumb from './composants/DsfrBreadcrumb.vue'
+
+onMounted(() => import('@gouvfr/dsfr/dist/dsfr/dsfr.module.js'))
 </script>
 
 # Comment commencer
